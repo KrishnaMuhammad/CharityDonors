@@ -1,0 +1,5 @@
+This goal of "Finding Donors" is to deploy a supervised learning model that analyzes three classification supervised models to determine which model will give the best output regarding accuracy, prediction, etc. The three models deployed in this project are GradientBoost, ADABoost, and LinearRegression. As we explore the data, there are no null files. The data is a mixture of continuous and non-continous features. In order to utilize this data, we must scale and normalize the features. 
+
+The target feaature is 'income' is seperated into two categories ">50k" or "<=50k>". The continuous data: capital-loss, capital-gain, education-num, age, and hours-per-week weree scaled to range between 0-1. 
+
+GradientBoostClassifer created a better accuracy score by 0.1 compared to ADABoostClassifier. For the purpose of this project, ADABoost is the model of choice since it has a better score and differs by 0.1 compared to Gradient Booster Classifer, as well as, computationally the deployment time is more efficient.
